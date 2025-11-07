@@ -7,120 +7,191 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
   <style>
     body {
-      background: #f8f9fa;
-      font-family: 'Segoe UI', sans-serif;
-    }
-    .hero {
-      background: linear-gradient(135deg, #0d6efd, #6610f2);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .hero img {
-      border: 4px solid white;
-    }
-    .section-title {
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-bottom: 15px;
-    }
-    .card {
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: scale(1.02);
-    }
+  background: #f4f4f4; /* gris claro */
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+.hero {
+  background: linear-gradient(135deg, #2c2c2c, #555); /* gris oscuro a medio */
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+.hero img {
+  border: 5px solid white;
+  transition: transform 0.3s ease;
+}
+.hero img:hover {
+  transform: scale(1.05);
+}
+.hero h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+.hero .lead span {
+  background: rgba(255,255,255,0.15);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 0 5px;
+  font-size: 0.9rem;
+}
+.section-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #444; /* gris oscuro */
+}
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  background: #fff;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+footer {
+  background: #2c2c2c; /* gris oscuro */
+  color: #eee;
+  padding: 20px 0;
+}
+footer a {
+  color: #eee;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #bbb; /* gris claro al pasar el mouse */
+}
+
   </style>
 </head>
 <body>
   <!-- Hero -->
   <section class="hero">
-    <img src="assets/profile.jpg" alt="Foto de Abner" class="rounded-circle shadow" width="140" />
-    <h1 class="mt-3">Abner Borrego Vargas</h1>
-    <p class="lead">Analista de problemas técnicos | Programador autodidacta | Adaptable y versátil | Buen trabajor en equipo</p>
+    <img src="assets/profile.jpg" alt="Foto de Abner" class="rounded-circle shadow" width="150" />
+    <h1>Abner Borrego Vargas</h1>
+    <p class="lead mt-3">
+      <span>Analista Técnico</span>
+      <span>Programador Autodidacta</span>
+      <span>Versátil</span>
+      <span>Trabajo en Equipo</span>
+    </p>
   </section>
 
   <div class="container py-5">
     <!-- Contacto -->
-    <div class="mb-4" data-aos="fade-up">
+    <div class="mb-5" data-aos="fade-up">
       <h2 class="section-title"><i class="bi bi-envelope"></i> Contacto</h2>
-      <ul class="list-unstyled">
-        <li><i class="bi bi-envelope-fill"></i> abner.borrego@iest.edu.mx</li>
-        <li><i class="bi bi-github"></i> <a href="https://github.com/Abner24042" target="_blank">Abner24042</a></li>
-        <li><i class="bi bi-geo-alt-fill"></i> Tampico, México</li>
-      </ul>
+      <div class="card p-3">
+        <ul class="list-unstyled mb-0">
+          <li><i class="bi bi-envelope-fill"></i> abner.borrego@iest.edu.mx</li>
+          <li><i class="bi bi-github"></i> <a href="https://github.com/Abner24042" target="_blank">Abner24042</a></li>
+          <li><i class="bi bi-geo-alt-fill"></i> Tampico, México</li>
+        </ul>
+      </div>
     </div>
 
     <!-- Experiencia -->
-    <div class="mb-4" data-aos="fade-up">
+    <div class="mb-5" data-aos="fade-up">
       <h2 class="section-title"><i class="bi bi-briefcase-fill"></i> Experiencia</h2>
-      <ul>
-        <li><strong>Administrador de redes</strong> – Cisco Packet Tracer (2025)</li>
-        <li><strong>Desarrollador MongoDB</strong> – Proyectos académicos (2025)</li>
-        <li><strong>Armado y mantenimiento de computadoras</strong> – Diagnóstico y solución de problemas técnicos</li>
-        <li><strong>Programación</strong> – HTML, CSS, PHP, Python, C++, MySQL</li>
-        <li><strong>Aprendiz autodidacta</strong> – Capacidad de aprender rápido nuevas tecnologías</li>
-      </ul>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5>Administrador de redes</h5>
+            <p>Cisco Packet Tracer (2025)</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5>Desarrollador MongoDB</h5>
+            <p>Proyectos académicos (2025)</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5>Armado y mantenimiento</h5>
+            <p>Diagnóstico y solución de problemas técnicos</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5>Programación</h5>
+            <p>HTML, CSS, PHP, Python, C++, MySQL</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Educación -->
-    <div class="mb-4" data-aos="fade-up">
+    <div class="mb-5" data-aos="fade-up">
       <h2 class="section-title"><i class="bi bi-mortarboard-fill"></i> Educación</h2>
-      <ul>
-        <li><strong>Preescolar:</strong> My First Class (2008 - 2011)</li>
-        <li><strong>Primaria:</strong> Instituto Cultural Tampico (2011 - 2017)</li>
-        <li><strong>Secundaria - Preparatoria:</strong> Instituto Cultural Anglo Hispano (2017 - 2023)</li>
-        <li><strong>Universidad:</strong> Ingeniería en Sistemas – Universidad IEST Anáhuac (2023 – Actualidad)</li>
-      </ul>
+      <div class="card p-3">
+        <ul>
+          <li><strong>Preescolar:</strong> My First Class (2008 - 2011)</li>
+          <li><strong>Primaria:</strong> Instituto Cultural Tampico (2011 - 2017)</li>
+          <li><strong>Secundaria - Preparatoria:</strong> Instituto Cultural Anglo Hispano (2017 - 2023)</li>
+          <li><strong>Universidad:</strong> Ingeniería en Sistemas – Universidad IEST Anáhuac (2023 – Actualidad)</li>
+        </ul>
+      </div>
     </div>
 
     <!-- Habilidades -->
-    <div class="mb-4" data-aos="fade-up">
+    <div class="mb-5" data-aos="fade-up">
       <h2 class="section-title"><i class="bi bi-tools"></i> Habilidades</h2>
-      <div class="row">
+      <div class="row g-4">
         <div class="col-md-6">
-          <ul>
-            <li>Adaptacion a Sistemas desconocidos</li>
-            <li>Habilidades Blandas</li>
-            <li>CLI troubleshooting</li>
-            <li>MongoDB Aggregation ($match, $project, $sort)</li>
-            <li>macOS y accesibilidad</li>
-          </ul>
+          <div class="card p-3">
+            <ul>
+              <li>Adaptación a sistemas desconocidos</li>
+              <li>Habilidades blandas</li>
+              <li>CLI troubleshooting</li>
+              <li>MongoDB Aggregation ($match, $project, $sort)</li>
+              <li>macOS y accesibilidad</li>
+            </ul>
+          </div>
         </div>
         <div class="col-md-6">
-          <ul>
-            <li>Autodidacta</li>
-            <li>Adaptabilidad</li>
-            <li>Buen Maestro</li>
-            <li>Windows</li>
-          </ul>
+          <div class="card p-3">
+            <ul>
+              <li>Autodidacta</li>
+              <li>Adaptabilidad</li>
+              <li>Buen maestro</li>
+              <li>Windows</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Proyectos -->
-    <div class="mb-4" data-aos="fade-up">
+    <div class="mb-5" data-aos="fade-up">
       <h2 class="section-title"><i class="bi bi-code-slash"></i> Proyectos destacados</h2>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">BIENIESTAR</h5>
-              <p class="card-text">Proyecto del cuidado de la salud de los trabajadores de base de la institución IEST Anáhuac.</p>
-            </div>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 p-3">
+            <h5 class="card-title">BIENIESTAR</h5>
+            <p class="card-text">Proyecto del cuidado de la salud de los trabajadores de base de la institución IEST Anáhuac.</p>
           </div>
         </div>
-        <!-- Puedes agregar más proyectos aquí -->
       </div>
     </div>
+  </div>
 
     <!-- Footer -->
-    <footer class="text-center mt-5 text-muted">
-      <p>© 2025 Abner Borrego</p>
-    </footer>
-  </div>
+  <footer class="text-center">
+    <p>© 2025 Abner Borrego</p>
+    <div>
+      <a href="https://github.com/Abner24042"><i class="bi bi-github"></i></a>
+      <a href="mailto:abner.borrego@iest.edu.mx"><i class="bi bi-envelope-fill"></i></a>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>

@@ -14,24 +14,52 @@
   font-family: 'Roboto', sans-serif;
   color: #333;
 }
+
 .hero {
-  background: linear-gradient(135deg, #2c2c2c, #555); /* gris oscuro a medio */
+  background: linear-gradient(135deg, #2c2c2c, #555); /* gris elegante */
   color: white;
   padding: 80px 20px;
-  text-align: center;
 }
+
+.hero .row {
+  align-items: center; /* centra verticalmente */
+}
+
 .hero img {
-  border: 5px solid white;
+  border-radius: 8px; /* esquinas ligeramente redondeadas */
   transition: transform 0.3s ease;
+  max-width: 100%;
 }
+
 .hero img:hover {
   transform: scale(1.05);
 }
+
 .hero h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+.hero .lead span {
+  background: rgba(255,255,255,0.15);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 0 5px;
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+/* En pantallas pequeñas, centramos todo */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero img {
+    margin-bottom: 20px;
+  }
+}
+
 .hero .lead span {
   background: rgba(255,255,255,0.15);
   padding: 5px 10px;
@@ -75,15 +103,26 @@ footer a:hover {
 <body>
   <!-- Hero -->
   <section class="hero">
-    <img src="assets/profile.jpg" alt="Foto de Abner" class="rounded-circle shadow" width="150" />
-    <h1>Abner Borrego Vargas</h1>
-    <p class="lead mt-3">
-      <span>Analista Técnico</span>
-      <span>Programador Autodidacta</span>
-      <span>Versátil</span>
-      <span>Trabajo en Equipo</span>
-    </p>
-  </section>
+  <div class="container">
+    <div class="row">
+      <!-- Columna izquierda: foto rectangular -->
+      <div class="col-md-4 text-center text-md-start">
+        <img src="assets/profile.jpg" alt="Foto de Abner" class="img-fluid shadow rounded" />
+      </div>
+      <!-- Columna derecha: nombre y etiquetas -->
+      <div class="col-md-8">
+        <h1>Abner Borrego Vargas</h1>
+        <p class="lead mt-3">
+          <span>Analista Técnico</span>
+          <span>Programador Autodidacta</span>
+          <span>Versátil</span>
+          <span>Trabajo en Equipo</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <div class="container py-5">
     <!-- Contacto -->

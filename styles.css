@@ -378,3 +378,190 @@ body {
         box-shadow: none;
     }
 }
+
+/* ===== EXPORTAR PDF BUTTON / LANG BUTTON ===== */
+.btn-print, .btn-lang {
+    margin-top: 1rem;
+    margin-right: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-print:hover, .btn-lang:hover {
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+/* ===== ESTILOS PARA IMPRESIÓN / EXPORTAR A PDF ===== */
+@media print {
+    /* Forzar color de texto y fondos si el navegador lo permite */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        text-shadow: none !important;
+    }
+
+    body {
+        background-color: #ffffff;
+        padding: 0 !important;
+        margin: 0;
+        font-size: 9.5pt;
+        color: #000000 !important;
+    }
+    
+    .container {
+        box-shadow: none;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        border: none;
+    }
+    
+    /* Adaptar el Header para impresión sin fondo azul */
+    .header {
+        background: transparent !important;
+        color: #000 !important;
+        padding: 1rem 0 !important;
+        border-bottom: 2px solid var(--primary-color);
+        page-break-after: avoid;
+        gap: 1.5rem;
+    }
+    
+    .name {
+        color: var(--accent-color) !important;
+        font-size: 2.2rem;
+        margin-bottom: 0;
+    }
+    
+    .title {
+        color: var(--primary-color) !important;
+        font-size: 1.2rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .subtitle {
+        color: #444 !important;
+        font-size: 0.9rem;
+    }
+
+    .profile-img-placeholder {
+        width: 100px !important;
+        height: 100px !important;
+        border: 2px solid var(--primary-color) !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+    
+    /* Ocultar elementos interactivos */
+    .btn-print, .btn-lang {
+        display: none !important;
+    }
+    
+    /* Quitar animaciones */
+    .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    
+    /* Layout simplificado a 1 sola columna para evitar el espacio en blanco de la izquierda */
+    .main-content {
+        display: block !important;
+        min-height: auto;
+    }
+    
+    .sidebar {
+        width: 100% !important;
+        padding: 0 !important;
+        background-color: transparent !important;
+        border-right: none !important;
+        border-bottom: 2px solid var(--primary-color) !important;
+        margin-bottom: 1.5rem !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 1rem !important;
+    }
+
+    .sidebar .section {
+        width: calc(50% - 1rem); /* Pone las secciones del sidebar en 2 columnas para que no ocupe tanto espacio vertical */
+        margin-bottom: 1rem !important;
+    }
+    
+    .main-body {
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+        background-color: transparent !important;
+    }
+    
+    .section {
+        margin-bottom: 1.2rem !important;
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+        border-bottom: 1px solid var(--primary-color);
+        padding-bottom: 0.2rem;
+        margin-bottom: 0.8rem;
+        color: var(--accent-color) !important;
+    }
+    
+    .experience-item, .project-card {
+        margin-bottom: 1rem !important;
+        padding: 0 !important;
+        border: none !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        page-break-inside: avoid;
+    }
+
+    .experience-header h4, .project-card h4 {
+        color: var(--primary-color) !important;
+        font-size: 1rem;
+    }
+
+    /* Fechas y etiquetas minimalistas */
+    .education-item .date, .experience-header .date {
+        background-color: transparent !important;
+        color: #555 !important;
+        border: 1px solid #ddd;
+        padding: 0.1rem 0.4rem;
+        font-size: 0.7rem;
+    }
+
+    .tag-list li {
+        border-color: #bbb !important;
+        padding: 0.1rem 0.5rem;
+        font-size: 0.75rem;
+        box-shadow: none !important;
+        background-color: transparent !important;
+        color: #333 !important;
+    }
+
+    .list-bullets {
+        font-size: 0.85rem;
+        color: #333 !important;
+        padding-left: 1.2rem;
+    }
+
+    .summary-text, .project-desc, .skill-group p, .contact-list a {
+        color: #333 !important;
+        font-size: 0.85rem;
+    }
+    
+    .contact-list a {
+        text-decoration: none !important;
+    }
+}

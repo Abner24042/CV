@@ -20,17 +20,6 @@ Usé vanilla JS en lugar de React o Vue porque quería practicar los fundamentos
 HTML5 · CSS3 · JavaScript (ES6+)
 ```
 
-Sin dependencias de npm. Solo Font Awesome para iconos y Google Fonts para tipografía.
-## Estructura
 
-```
-CV2/
-├── index.html   # Estructura y contenido
-├── styles.css   # Todo el diseño, incluyendo @media print para el CV
-├── script.js    # Dark mode, traducción y animaciones
-└── pfp.png      # Foto de perfil
-```
-
----
 
 Abner Borrego · Tamaulipas, México · [github.com/Abner24042](https://github.com/Abner24042)

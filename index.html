@@ -13,17 +13,45 @@
 <body>
     <div class="container fade-in">
         <header class="header">
-            <div class="profile-img-container">
-                <div class="profile-img-placeholder">
-                    <img src="pfp.png" alt="Abner Borrego">
-                </div>
+            <!-- Controles (top-right) -->
+            <div class="hero-utils">
+                <button id="lang-toggle" class="btn-util"><i class="fa-solid fa-language"></i> <span class="util-label">Switch to English</span></button>
+                <button id="dark-toggle" class="btn-util"><i class="fa-solid fa-moon"></i></button>
             </div>
-            <div class="header-content">
-                <h1 class="name">Abner Borrego</h1>
-                <h2 class="title">Software Developer</h2>
-                <button id="lang-toggle" class="btn-lang"><i class="fa-solid fa-language"></i>Switch to English</button>
-         <!-- download pdf button -->
-               <!-- <button onclick="window.print()" class="btn-print"><i class="fa-solid fa-file-pdf"></i> Descargar PDF</button> -->
+
+            <!-- Foto -->
+            <div class="hero-photo-wrap">
+                <img src="pfp.png" alt="Abner Borrego" class="hero-photo">
+            </div>
+
+            <!-- Contenido -->
+            <div class="hero-content">
+                <h1 class="hero-name">Abner Borrego</h1>
+                <div class="print-contact">
+                    Tamaulipas, México &nbsp;&bull;&nbsp; abner.borrego2005@gmail.com &nbsp;&bull;&nbsp; +52 833 388 7301 &nbsp;&bull;&nbsp; github.com/Abner24042
+                </div>
+                <div class="hero-roles">
+                    <span>Software Developer</span>
+                    <span class="role-dot">·</span>
+                    <span>Data Analyst</span>
+                    <span class="role-dot">·</span>
+                    <span>ISC Student @ IEST Anáhuac</span>
+                </div>
+                <p class="hero-tagline">Construyendo sistemas funcionales con Python, JavaScript y MongoDB — orientado al impacto real.</p>
+                <div class="hero-bottom">
+                    <div class="hero-cta">
+                        <a href="#proyectos" class="btn-primary"><i class="fa-solid fa-rocket"></i> Ver Proyectos</a>
+                        <button onclick="window.print()" class="btn-secondary"><i class="fa-solid fa-file-arrow-down"></i> Descargar CV</button>
+                    </div>
+                    <div class="hero-chips">
+                        <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="chip"><i class="fa-solid fa-code"></i> TypeScript</span>
+                        <span class="chip"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                        <span class="chip"><i class="fa-solid fa-database"></i> MongoDB</span>
+                        <span class="chip"><i class="fa-solid fa-table-columns"></i> SQL</span>
+                    </div>
+                    </div>
             </div>
         </header>
 
@@ -40,26 +68,42 @@
                 </section>
 
                 <section class="section">
-                    <h3 class="section-title"><i class="fa-solid fa-wrench"></i> Habilidades Técnicas</h3>
+                    <h3 class="section-title"><i class="fa-solid fa-laptop-code"></i> Tecnologías</h3>
                     <div class="skill-group">
                         <h4>Lenguajes</h4>
-                        <p>Python, C++, JavaScript, TypeScript, PHP</p>
+                        <p>Python, C++, JavaScript, TypeScript, PHP, SQL</p>
                     </div>
                     <div class="skill-group">
-                        <h4>Frontend & Backend</h4>
-                        <p>HTML, CSS, PHP, Node</p>
+                        <h4>Frontend</h4>
+                        <p>HTML5, CSS3</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Backend</h4>
+                        <p>Node.js, PHP</p>
                     </div>
                     <div class="skill-group">
                         <h4>Bases de Datos</h4>
-                        <p>SQL, NoSQL (MongoDB, MySQL)</p>
+                        <p>MongoDB, MySQL</p>
                     </div>
                     <div class="skill-group">
-                        <h4>Sistemas y Redes</h4>
-                        <p>Linux (Debian - CLI), Windows, macOS, Fundamentos de redes y protocolos</p>
+                        <h4>Análisis de Datos</h4>
+                        <p>Pandas, NumPy, Power BI</p>
                     </div>
                     <div class="skill-group">
-                        <h4>Otros Conocimientos</h4>
-                        <p>Integración de APIs, CLI troubleshooting, MongoDB Aggregation, Armado y mantenimiento</p>
+                        <h4>Control de Versiones</h4>
+                        <p>Git, GitHub</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Herramientas</h4>
+                        <p>VS Code, MongoDB Compass, Cisco Packet Tracer, RStudio</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Servidores</h4>
+                        <p>Nginx, Bash, SSH</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Sistemas Operativos</h4>
+                        <p>Linux (Debian CLI), Windows, macOS</p>
                     </div>
                 </section>
 
@@ -69,16 +113,6 @@
                         <h4>Ingeniería en Sistemas</h4>
                         <p>Universidad IEST Anáhuac</p>
                         <span class="date">2023 – Actualidad</span>
-                    </div>
-                    <div class="education-item">
-                        <h4>Secundaria - Preparatoria</h4>
-                        <p>Instituto Cultural Anglo Hispano</p>
-                        <span class="date">2017 – 2023</span>
-                    </div>
-                    <div class="education-item">
-                        <h4>Primaria</h4>
-                        <p>Instituto Cultural Tampico</p>
-                        <span class="date">2011 – 2017</span>
                     </div>
                 </section>
 
@@ -118,17 +152,29 @@
                         <li>Enseñar y compartir</li>
                     </ul>
                 </section>
+
+                <section class="section">
+                    <h3 class="section-title"><i class="fa-solid fa-globe"></i> Idiomas</h3>
+                    <div class="skill-group">
+                        <h4>Español</h4>
+                        <p>Nativo</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Inglés</h4>
+                        <p>Intermedio (B1)</p>
+                    </div>
+                </section>
             </aside>
 
             <main class="main-body">
                 <section class="section">
                     <h3 class="section-title"><i class="fa-solid fa-user-tie"></i> Perfil</h3>
-                    <p class="summary-text">Estudiante de Ingeniería en Sistemas enfocado en desarrollo de software, con experiencia en la creación de sistemas funcionales orientados a resolver problemas reales. Me caracterizo por mi adaptabilidad, rapidez de aprendizaje y facilidad para trabajar con distintas tecnologías. Busco desarrollarme como programador en entornos dinámicos.</p>
+                    <p class="summary-text">Estudiante de Ingeniería en Sistemas con enfoque en desarrollo de software, análisis de datos y automatización de procesos. Experiencia en el diseño e implementación de sistemas utilizando Python, JavaScript, TypeScript, PHP, SQL y MongoDB. He participado en proyectos que involucran gestión de datos, desarrollo web y optimización de procesos mediante tecnología RFID. Busco oportunidades para desarrollar soluciones tecnológicas que generen impacto y continuar fortaleciendo mis habilidades como desarrollador y analista de datos.</p>
                 </section>
 
                 <section class="section">
                     <h3 class="section-title"><i class="fa-solid fa-briefcase"></i> Experiencia y Soporte</h3>
-                    
+
                     <div class="experience-item">
                         <div class="experience-header">
                             <h4>Administrador de Redes</h4>
@@ -139,7 +185,7 @@
                             <li>Configuración básica de dispositivos y protocolos.</li>
                         </ul>
                     </div>
-                    
+
                     <div class="experience-item">
                         <div class="experience-header">
                             <h4>Desarrollador (SQL & NoSQL)</h4>
@@ -148,6 +194,33 @@
                         <ul class="list-bullets">
                             <li>Modelado de bases de datos relacionales (SQL) y no relacionales (NoSQL).</li>
                             <li>Uso de agregaciones avanzadas para consulta y análisis de datos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4>Analista de Datos</h4>
+                        </div>
+                        <ul class="list-bullets">
+                            <li>Limpieza y transformación de datos.</li>
+                            <li>Consultas complejas en SQL.</li>
+                            <li>Modelado de bases de datos relacionales y no relacionales.</li>
+                            <li>Uso de MongoDB Aggregation Framework.</li>
+                            <li>Generación de reportes y extracción de información.</li>
+                            <li>Identificación de patrones y optimización de consultas.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-header">
+                            <h4>Administración de Servidores</h4>
+                        </div>
+                        <ul class="list-bullets">
+                            <li>Control y monitoreo de servidores en entornos Linux.</li>
+                            <li>Optimización de rendimiento y escalabilidad mediante scripts Bash.</li>
+                            <li>Configuración y gestión de Nginx como servidor web y proxy inverso.</li>
+                            <li>Acceso y administración remota de servidores vía SSH.</li>
+                            <li>Automatización de tareas mediante cron jobs y shell scripting.</li>
                         </ul>
                     </div>
 
@@ -162,17 +235,24 @@
                     </div>
                 </section>
 
-                <section class="section">
+                <section class="section" id="proyectos">
                     <h3 class="section-title"><i class="fa-solid fa-rocket"></i> Proyectos Destacados</h3>
-                    
+
                     <div class="project-card">
                         <h4>Sistema de Automatización para Granja</h4>
                         <p class="project-desc">Desarrollo de un sistema integral de gestión enfocado en la organización y control eficiente de datos del entorno ganadero.</p>
                         <ul class="list-bullets">
-                            <li>Registro de ganado (vacas).</li>
-                            <li>Módulos especializados para clínica y taller.</li>
-                            <li>Implementación de tecnología RFID para la maquinaria.</li>
+                            <li>Arquitectura modular para gestión de ganado, clínica y taller.</li>
+                            <li>Integración de RFID para identificación y rastreo de maquinaria.</li>
+                            <li>Diseño de base de datos para administración de recursos.</li>
+                            <li>Desarrollo de múltiples módulos conectados en una sola plataforma.</li>
                         </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">RFID</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
                     </div>
 
                     <div class="project-card">
@@ -187,17 +267,39 @@
                         <p class="project-subtitle">IEST Anáhuac</p>
                         <p class="project-desc">Plataforma destinada a conectar trabajadores con especialistas, priorizando la accesibilidad y el seguimiento de los usuarios.</p>
                         <ul class="list-bullets">
-                            <li>Manejo de áreas: salud mental, nutrición y ejercicio.</li>
-                            <li>Mejora significativa en la comunicación y en los tiempos de atención.</li>
-                            <li>Desarrollo en iteraciones (v1 y v2):
+                            <li>Desarrollo iterativo de dos versiones del sistema.</li>
+                            <li>Gestión de usuarios y seguimiento de especialistas en salud mental, nutrición y ejercicio.</li>
+                            <li>Diseño orientado a accesibilidad y mejora significativa en tiempos de atención.</li>
+                            <li>Documentación técnica del proyecto y control de versiones con Git y GitHub.</li>
+                            <li>Repositorios:
                                 <ul>
                                     <li><a href="https://github.com/Abner24042/BieniestarV2" target="_blank" style="color: var(--primary-color); text-decoration: none; font-weight: 600;"><i class="fa-brands fa-github"></i> Repositorio v2 (Versión Actual)</a></li>
                                     <li><a href="https://github.com/Abner24042/BienIESTar" target="_blank" style="color: var(--text-muted); text-decoration: none;"><i class="fa-brands fa-github"></i> Repositorio v1</a></li>
                                 </ul>
                             </li>
                         </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Git</span>
+                        </div>
                     </div>
                 </section>
+
+                <section class="section">
+                    <h3 class="section-title"><i class="fa-solid fa-trophy"></i> Logros Académicos</h3>
+                    <ul class="list-bullets">
+                        <li>Desarrollo de una plataforma universitaria para bienestar y seguimiento de usuarios.</li>
+                        <li>Implementación de RFID para automatización de procesos.</li>
+                        <li>Aplicación de bases de datos SQL y NoSQL en proyectos reales.</li>
+                        <li>Desarrollo y documentación de sistemas iterativos.</li>
+                    </ul>
+                </section>
+
+            
             </main>
         </div>
     </div>

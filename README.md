@@ -21,17 +21,6 @@ HTML5 · CSS3 · JavaScript (ES6+)
 ```
 
 Sin dependencias de npm. Solo Font Awesome para iconos y Google Fonts para tipografía.
-
-## Cómo correrlo
-
-Clona el repo y abre `index.html` directo en el navegador. No necesita servidor ni instalación.
-
-```bash
-git clone https://github.com/Abner24042/CV2.git
-cd CV2
-# Abre index.html en tu navegador
-```
-
 ## Estructura
 
 ```
